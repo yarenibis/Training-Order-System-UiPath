@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Cost centre",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "cNeDreM7wk2SvrOogpcLhg",
+  "Reference": "n_XkHNwkRUqSJzUR3A5yMg/cNeDreM7wk2SvrOogpcLhg",
+  "ParentRef": "n_XkHNwkRUqSJzUR3A5yMg/7WWVtWy15EiIhzbswYSkRQ",
+  "Created": "2026-10-06T12:44:23.1321767Z",
+  "Updated": "2026-10-06T12:44:23.1321767Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

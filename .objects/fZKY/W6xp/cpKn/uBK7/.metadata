@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Please take note of you…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "uBK7m6Y-y0GMKKSaahHJlg",
+  "Reference": "n_XkHNwkRUqSJzUR3A5yMg/uBK7m6Y-y0GMKKSaahHJlg",
+  "ParentRef": "n_XkHNwkRUqSJzUR3A5yMg/cpKnItTQA0uY80mmqVMCyg",
+  "Created": "2026-10-06T12:55:25.3755681Z",
+  "Updated": "2026-10-06T12:55:25.3755681Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

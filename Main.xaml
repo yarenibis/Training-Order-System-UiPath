@@ -1,0 +1,716 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="667.2,591.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart sap:VirtualizedContainerService.HintSize="667.2,592" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+      <Flowchart.Variables>
+        <Variable x:TypeArguments="sd2:DataTable" Name="varInputData" />
+        <Variable x:TypeArguments="sd2:DataTable" Name="varTempDt" />
+      </Flowchart.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <av:Point x:Key="ShapeLocation">405,35</av:Point>
+          <av:Size x:Key="ShapeSize">49.6,49.6</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">429.8,84.6 429.8,114.6 430.2,114.6 430.2,115</av:PointCollection>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Flowchart.StartNode>
+        <x:Reference>__ReferenceID2</x:Reference>
+      </Flowchart.StartNode>
+      <FlowStep x:Name="__ReferenceID2" sap2010:WorkflowViewState.IdRef="FlowStep_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">375,115</av:Point>
+            <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+            <av:PointCollection x:Key="ConnectorLocation">430.2,185.4 430.2,225</av:PointCollection>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <Sequence DisplayName="Init_state" sap:VirtualizedContainerService.HintSize="649.6,1360.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[varInputData]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="616,226.4" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="C:\Users\yaren\OneDrive\Belgeler\UiPath\OrderSystem\Order System.xlsx" />
+          <ui:BuildDataTable DataTable="[varTempDt]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="616,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Order_x0020_Number&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Sign in" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="616,982.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="ff64224a-a682-4414-8b3e-d9945abf3304" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,736" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Staff Number'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="ff64224a-a682-4414-8b3e-d9945abf3304" Text="admin" Version="V5">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable ContentHash="ZbV719lxhkuV7v1lO7ySdg" DesignTimeRectangle="113, 48, 125, 25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd ctrlname='txtUsername' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;" Guid="66957911-2f78-485e-a65b-b0356ba2558c" InformativeScreenshot="a631f17427c41a97e27517e9159b684a.jpg" IsResponsive="True" Reference="n_XkHNwkRUqSJzUR3A5yMg/gJvZf_LJ7kSGoUIDs47p5w" ScopeSelectorArgument="&lt;wnd app='trainingordersystem.exe' ctrlname='frmLogin' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="19, 55, 86, 16" ElementType="Text" FuzzySelectorArgument="&lt;wnd ctrlname='Label1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' check:text='Staff Number' /&gt;" Guid="eae7eb1d-dc40-447a-a4ec-dc827c5f30b1" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="ff64224a-a682-4414-8b3e-d9945abf3304" Text="admin" Version="V5">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable ContentHash="4KsiLc2sq02sSTNX0ItdFA" DesignTimeRectangle="113, 91, 125, 25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd ctrlname='txtPassword' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;" Guid="9cb3b6b0-9b5a-443b-aeb5-cd0c968a3d1b" InformativeScreenshot="ae956c3a4ba75d8a0f9dce10d0a850ae.jpg" IsResponsive="True" Reference="n_XkHNwkRUqSJzUR3A5yMg/EPDLQuiXq06m39Rf2yYN1Q" ScopeSelectorArgument="&lt;wnd app='trainingordersystem.exe' ctrlname='frmLogin' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="19, 100, 66, 16" ElementType="Text" FuzzySelectorArgument="&lt;wnd ctrlname='Label2' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' check:text='Password' /&gt;" Guid="fc0af292-85f5-4d7f-b2c8-ec413c4ad7ac" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign In'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,184.8" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ff64224a-a682-4414-8b3e-d9945abf3304" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable ContentHash="Q-RrE2dfPE-6iJf4U-41UQ" DesignTimeRectangle="83, 131, 94, 29" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlname='Button1' /&gt;" Guid="2be1f4da-2d17-46f1-99df-53a295b8615e" InformativeScreenshot="3d5755cb86e5d25d5c30678ef1ff8769.jpg" Reference="n_XkHNwkRUqSJzUR3A5yMg/wps9-I-4PUCTzCDveUtKTw" ScopeSelectorArgument="&lt;wnd app='trainingordersystem.exe' ctrlname='frmLogin' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.OCREngine>
+              <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                <ActivityFunc.Argument>
+                  <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                </ActivityFunc.Argument>
+              </ActivityFunc>
+            </uix:NApplicationCard.OCREngine>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="130, 130, 261, 179" ContentHash="tAPzeYkXlU6SFXGbrvS_GQ" FilePath="C:\Users\yaren\OneDrive\Belgeler\UiPath\OrderSystem\trainingordersystem.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAZkSURBVFhH7ZdZUFNnGIbP9LJ3nV67KyCyb1agKlYhici+ioqgoCCrKCQQJKAUlaqIC1oX6l733XZ0rB2tY3VERTRCTohiEhZxwd1aO2/n+89JOGDI9MZpL3pm3qtkzvO+3/f9//l/jvv/+S89oxQ7y0eF7obDtL1wCNsHh/Af4Ri+H44RB+AYeRBOUYfgFH0YTtFH4BRzBKNjj2J07DGMjjsuKP4Ek3P8STgnkE71VeJpOMUcWM5x3Occx33Wn88RvKz+IZbuNqNiVzvKd7ZjyY52qOvNUG0zo2iLGQWbzcirMyN7gxkZtWak15iQusqEmStNSKwyIXaZEREaI6aqjZCXGBFaakS4xoiopSZEV7RhzPQz4DhuuGii70PJCZ5QoWOKI5XrEKvRIUajQ7RGhyiNDpFlPCLKeISX8QhbwmNaKY/QUh5T1TwUah7yEh4yJj3kaj0UpFI9ElaYMSbpZzLgy3HcF/35HJWdkiuKtJCLkkkUorzXK1WzRC0IKRZVYpHuIyVVm+Ey8ywZ8Oc47sv+fI56TmXvDw8pkoCVNsAlLZBJoWqJSnnI1IKSV7fDZda5gQ3QwFHP+ya3lVoK1glSiyKgVXrIlvQqpbYDLsnn7RiIOMAG7p/AKXEvWAK1AMsEyTWtVqVt6ITr7F/sGIg8yKbdApf1h3+U2gIVwQS1AMtJBsgrBCkqDJi3qQuuqb8ObIDWOS01ZsAGvE9qSeLgUj2CVDwmqHj4L9YhoJBHQBGPQCVJj0CVoLS6TrjNuWjHQPRhts5twa3J1TpMVukQUNAMzywtXDLuYvS8u3DO0MJlwT24ZjXDLacF7rktcM/TwSNfkOdCHjNrO+A295I9A0fYJsMM2Ejun6eFe8YdjEq5DYe5TXBKvwvn+VqMyZSARSgBvQr08F6kh/diPXwKW5GysQvu6ZftGIg5yna4EJVooLgZsuIWjMvVwiGlESOSGxncce4dAS6mdstuZok983XwKuCtQN+iVvgpDfBTGeBXbEDalkdwn3dlYAO0t2fWkgEBPnHRPTjObsSwGbescGtyCzynBR55QmILmKBji+/jq5L7GKd+gHGlD+C/pA0Z9d3wmH/VnoFjSK8RDHjNb8KQxBsYmnQTw2c1YuTs23CYYwMupvZZrIevBawWgAFlbQjUPERg+UN8XWFE9q4n8Mi8ZsdA3HH2YXGZ04jBCQ0YOv0mhs8U0jukNsEx7Q7r+UdwSq0ysMQMrBGA45caMWGZCRMqTZj4rRn5+57Cc8F1+wZkSgMGxTWw9MOSbmLErN6+07SzgctuZmXvAxdTU1oCT6w0I6jKjEkr2jFpZQe+qe7AooM98MxqsGMg/gQm5LdiUHwDhojpR85u7FN6mnY2cAuFslvgVG5KTYkFcAcmV3diyqpOBK/uQvCaLiiPPodXzk37BgJy9Bic0Nt7aXqXzN7S0/KinlvKzuCVJgQtb2dpCRyy5hFka7shX9cNxbrHKDn5El65jQMboJOM3wK9UH7L5Kc2wYl6L0lvKT0NHE04lZ0lF+GUWLb2EYNO3fgEoXVPMW3TU5T99AreebftGEg4Ca/5euvwSSd/TKaWrfc+6cXSs55XmSXwbig2PGbQsO+fIWJrDyK39aDi3Bt459+xZ+AUPObpxfLfwkhp+cXJZ72n9CpDb/pKExs2KjtLvl6Ah2/pQdT254j+4QVidr5E5YW38CnQ2jfgndHKDFin37L0JOWnHY71ngZPmn5NF+v3tDoRXv8csTtfIn7PKyTse40Vl/6Az6Jm+wbGZrViWJLt/rOlJy2/5iHGi72f8p2QfuqGxwjb/AyR20X43teYvv8tkg69Q/WVP+G7uMWOgcTT8M9ttQ6gtf9kwNJ/WnpKsfwaafm7IK/tRmjdE5aeyh63+xUS97/BjMPvkHzsPVZf+wDfQt6+gcA8HkGF9xFc/ACKsjaELTUiqsqEuGozkmrakby+E6mbupC+9REydzxGzp6nWLi/B4WHn0N1/AVKz7yC5uxrLDv/FlUX32Hl5fdYdfUDaq7/herfP8BPqR/YAF0a6NxOR2c6vdIB0jX5PFxTLrCTDB0m3NJ+Y59U+qrRh4X2dtpePbNusE2G1rl3XhObdho46jmV3beIh5+yFc6zDu0Z8FguXhbo0kB/IJefQvRu2xcT8bpEP5A7KtGnEL3b9tXs33j+Bgn+05B0xhznAAAAAElFTkSuQmCC" InformativeScreenshot="85542ab987c7b6aa3840b57cc780df55.jpg" Reference="n_XkHNwkRUqSJzUR3A5yMg/SiYbCYgksUK1OmghjyQ4gA" Selector="&lt;wnd app='trainingordersystem.exe' ctrlname='frmLogin' /&gt;" Version="V3" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+        </Sequence>
+        <FlowStep.Next>
+          <FlowStep x:Name="__ReferenceID0">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <av:Point x:Key="ShapeLocation">375,225</av:Point>
+                <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                <av:PointCollection x:Key="ConnectorLocation">430.2,295.4 430.2,325</av:PointCollection>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Processing state" sap:VirtualizedContainerService.HintSize="649.6,4800.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="varOutputNum" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[varInputData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="616,4740.8" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd2:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd2:DataRow" Name="CurrentRow" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="484.8,4568" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:String" Name="currentNum" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Options" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="451.2,745.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="a1f6c9e5-6083-4b18-8425-62aa4f5cce60" Version="V2">
+                        <uix:NApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,490.4" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Option number'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="a1f6c9e5-6083-4b18-8425-62aa4f5cce60" Text="1" Version="V5">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable ContentHash="xdTtPZ35zEi8RyvOczbF1g" DesignTimeRectangle="125, 174, 81, 25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd ctrlname='txtOption' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;" Guid="08a1e1e8-9a77-4746-948c-355789ef1b35" InformativeScreenshot="f7d1cd889f557c885fce2495ed060d8b.jpg" IsResponsive="True" Reference="n_XkHNwkRUqSJzUR3A5yMg/BMBkQFniAkC4s-wLyl7fDA" ScopeSelectorArgument="&lt;wnd app='trainingordersystem.exe' ctrlname='frmMenu' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <uix:Target DesignTimeRectangle="19, 183, 99, 16" ElementType="Text" FuzzySelectorArgument="&lt;wnd ctrlname='Label4' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' check:text='Option number:' /&gt;" Guid="5ea2be59-9521-43ba-af91-726607431c99" SearchSteps="FuzzySelector" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NTypeInto.Target>
+                                <uix:NTypeInto.VerifyOptions>
+                                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                  </uix:VerifyExecutionTypeIntoOptions>
+                                </uix:NTypeInto.VerifyOptions>
+                              </uix:NTypeInto>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Go'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,184.8" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a1f6c9e5-6083-4b18-8425-62aa4f5cce60" Version="V5">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable ContentHash="grHpJfgBW0-LsWUUvDidJQ" DesignTimeRectangle="228, 171, 124, 29" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlname='Button2' /&gt;" Guid="0e67621f-6165-4855-93e6-261c5c50dc7e" InformativeScreenshot="e0db363f262ddb8691dffed42128405b.jpg" Reference="n_XkHNwkRUqSJzUR3A5yMg/s_gob65K_US6cdbNDYqO1Q" ScopeSelectorArgument="&lt;wnd app='trainingordersystem.exe' ctrlname='frmMenu' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                            </Sequence>
+                          </ActivityAction>
+                        </uix:NApplicationCard.Body>
+                        <uix:NApplicationCard.OCREngine>
+                          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                            <ActivityFunc.Argument>
+                              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                            </ActivityFunc.Argument>
+                          </ActivityFunc>
+                        </uix:NApplicationCard.OCREngine>
+                        <uix:NApplicationCard.TargetApp>
+                          <uix:TargetApp Area="195, 195, 370, 248" ContentHash="HNZkDBdYe06d_9upeMj-QQ" FilePath="C:\Users\yaren\OneDrive\Belgeler\UiPath\OrderSystem\trainingordersystem.exe" IconBase64="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" InformativeScreenshot="b9a9a99658f77d85164397ce63ad9f35.jpg" Reference="n_XkHNwkRUqSJzUR3A5yMg/IbQj8QaJK0OUUcTGZKO--A" Selector="&lt;wnd app='trainingordersystem.exe' ctrlname='frmMenu' /&gt;" Version="V3" />
+                        </uix:NApplicationCard.TargetApp>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NApplicationCard>
+                      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="New Order" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="451.2,1482.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="d8b3a82a-1207-4a54-a97c-be061360ad4d" Version="V2">
+                        <uix:NApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,1227.2" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Product code'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="SameAsCard" ScopeIdentifier="d8b3a82a-1207-4a54-a97c-be061360ad4d" Text="[CurrentRow(&quot;Product Code&quot;).ToString]" Version="V5">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable ContentHash="gXMQoLsgRUi4f_fywuzJXA" DesignTimeRectangle="146, 43, 125, 25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd ctrlname='txtProductCode' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;" Guid="f81ccf7a-218d-4c49-845d-498b855f1784" InformativeScreenshot="9570cac9088c915f023f6100d9e04f9b.jpg" IsResponsive="True" Reference="n_XkHNwkRUqSJzUR3A5yMg/JTk6TSGfl0mKo8Csn8o22A" ScopeSelectorArgument="&lt;wnd app='trainingordersystem.exe' ctrlname='frmAddOrder' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target DesignTimeRectangle="20, 52, 89, 16" ElementType="Text" FuzzySelectorArgument="&lt;wnd ctrlname='Label1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' check:text='Product code' /&gt;" Guid="ead15258-5107-44ff-91b3-324e4e429379" SearchSteps="FuzzySelector" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NTypeInto.Target>
+                                <uix:NTypeInto.VerifyOptions>
+                                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                  </uix:VerifyExecutionTypeIntoOptions>
+                                </uix:NTypeInto.VerifyOptions>
+                              </uix:NTypeInto>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Number required'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="SameAsCard" ScopeIdentifier="d8b3a82a-1207-4a54-a97c-be061360ad4d" Text="[CurrentRow(&quot;Number Required&quot;).ToString]" Version="V5">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable ContentHash="C8Jjha6fGk2r5domv2NJSg" DesignTimeRectangle="146, 86, 125, 25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd ctrlname='txtNumberReq' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;" Guid="f2df6c9c-42a3-4d29-8f0e-dbd3c7fb91de" InformativeScreenshot="634f8c58a88beb86eea07f0122aaca82.jpg" IsResponsive="True" Reference="n_XkHNwkRUqSJzUR3A5yMg/GDS4hNgv0UW8ZLQ_4XOUfw" ScopeSelectorArgument="&lt;wnd app='trainingordersystem.exe' ctrlname='frmAddOrder' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <uix:Target DesignTimeRectangle="20, 95, 106, 16" ElementType="Text" FuzzySelectorArgument="&lt;wnd ctrlname='Label5' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' check:text='Number required' /&gt;" Guid="04f36313-aa58-4429-9876-30d1bc65fa4c" SearchSteps="FuzzySelector" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NTypeInto.Target>
+                                <uix:NTypeInto.VerifyOptions>
+                                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                  </uix:VerifyExecutionTypeIntoOptions>
+                                </uix:NTypeInto.VerifyOptions>
+                              </uix:NTypeInto>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Unit price'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_8" InteractionMode="SameAsCard" ScopeIdentifier="d8b3a82a-1207-4a54-a97c-be061360ad4d" Text="[CurrentRow(&quot;Unit Price&quot;).ToString]" Version="V5">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable ContentHash="Jzdz_mikE0Gl1hXvP5rFxg" DesignTimeRectangle="146, 133, 125, 25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd ctrlname='txtUnitprice' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;" Guid="bb5062f7-aa7d-419e-80e6-7078e176782c" InformativeScreenshot="6770da7866e1e2b648a4c64d34300aad.jpg" IsResponsive="True" Reference="n_XkHNwkRUqSJzUR3A5yMg/74ZVkk67Rki9tI_dPnWEWQ" ScopeSelectorArgument="&lt;wnd app='trainingordersystem.exe' ctrlname='frmAddOrder' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <uix:Target DesignTimeRectangle="26, 142, 65, 16" ElementType="Text" FuzzySelectorArgument="&lt;wnd ctrlname='Label7' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' check:text='Unit price' /&gt;" Guid="251e83da-1c8b-47d8-ae63-85ae4fa662d2" SearchSteps="FuzzySelector" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NTypeInto.Target>
+                                <uix:NTypeInto.VerifyOptions>
+                                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                  </uix:VerifyExecutionTypeIntoOptions>
+                                </uix:NTypeInto.VerifyOptions>
+                              </uix:NTypeInto>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Cost centre'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_9" InteractionMode="SameAsCard" ScopeIdentifier="d8b3a82a-1207-4a54-a97c-be061360ad4d" Text="[CurrentRow(&quot;Cost Centre&quot;).ToString]" Version="V5">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable ContentHash="NpSF1L-ndUSWp1wk0ck6rQ" DesignTimeRectangle="146, 180, 125, 25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd ctrlname='txtCostCentre' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;" Guid="648ee4ae-7f69-42dc-9c7a-6cd16aa477b3" InformativeScreenshot="6f8e12fa5628c3e28629aa832f4878dc.jpg" IsResponsive="True" Reference="n_XkHNwkRUqSJzUR3A5yMg/cNeDreM7wk2SvrOogpcLhg" ScopeSelectorArgument="&lt;wnd app='trainingordersystem.exe' ctrlname='frmAddOrder' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <uix:Target DesignTimeRectangle="26, 188, 76, 16" ElementType="Text" FuzzySelectorArgument="&lt;wnd ctrlname='Label6' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' check:text='Cost centre' /&gt;" Guid="09931372-c0e4-42bf-85a0-7f20d0997f65" SearchSteps="FuzzySelector" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NTypeInto.Target>
+                                <uix:NTypeInto.VerifyOptions>
+                                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                  </uix:VerifyExecutionTypeIntoOptions>
+                                </uix:NTypeInto.VerifyOptions>
+                              </uix:NTypeInto>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit order'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,184.8" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d8b3a82a-1207-4a54-a97c-be061360ad4d" Version="V5">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable ContentHash="-oZ_SzVKlUSOnccVj0W99Q" DesignTimeRectangle="120, 280, 94, 29" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlname='Button1' /&gt;" Guid="a805baae-a1c3-445c-9ea8-07a38eb859cf" InformativeScreenshot="4bdf121cb71c83a894d29fd211b18889.jpg" Reference="n_XkHNwkRUqSJzUR3A5yMg/aK4v998Vnk--Zhgubb7egw" ScopeSelectorArgument="&lt;wnd app='trainingordersystem.exe' ctrlname='frmAddOrder' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                            </Sequence>
+                          </ActivityAction>
+                        </uix:NApplicationCard.Body>
+                        <uix:NApplicationCard.OCREngine>
+                          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                            <ActivityFunc.Argument>
+                              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                            </ActivityFunc.Argument>
+                          </ActivityFunc>
+                        </uix:NApplicationCard.OCREngine>
+                        <uix:NApplicationCard.TargetApp>
+                          <uix:TargetApp Area="33, 33, 373, 335" ContentHash="ZrwZQIW_EE-ZGTaBlBKdaw" FilePath="C:\Users\yaren\OneDrive\Belgeler\UiPath\OrderSystem\trainingordersystem.exe" IconBase64="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" InformativeScreenshot="2c756ce6a73e4841a95e0b04b9ebb810.jpg" Reference="n_XkHNwkRUqSJzUR3A5yMg/7WWVtWy15EiIhzbswYSkRQ" Selector="&lt;wnd app='trainingordersystem.exe' ctrlname='frmAddOrder' /&gt;" Version="V3" />
+                        </uix:NApplicationCard.TargetApp>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NApplicationCard>
+                      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Order Confirmation" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="451.2,988" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="9085663c-ff62-4ae9-a8ba-e14a45390bca" Version="V2">
+                        <uix:NApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,732.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="x:String" Name="deneme" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'WindowsForms10.STATIC.a...'" sap:VirtualizedContainerService.HintSize="416,139.2" sap2010:WorkflowViewState.IdRef="GetValue_1">
+                                <ui:GetValue.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="589d3551-bd82-4c03-ad06-c8c9389d0111" InformativeScreenshot="abb106ace953c399885524f212acdc3c" Selector="&lt;wnd ctrlname='Label1' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:GetValue.Target>
+                                <ui:GetValue.Value>
+                                  <OutArgument x:TypeArguments="x:String">[varOutputNum]</OutArgument>
+                                </ui:GetValue.Value>
+                              </ui:GetValue>
+                              <Assign sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[currentNum]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[varOutputNum.Split(":")(1)]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[currentNum]" />
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Continue'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,184.8" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9085663c-ff62-4ae9-a8ba-e14a45390bca" Version="V5">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable ContentHash="w23oFtn5rUijFqfQnlq2Rw" DesignTimeRectangle="134, 144, 94, 29" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlname='Button1' /&gt;" Guid="ed2ee6bb-e75a-479e-96f1-32ec6f93070c" InformativeScreenshot="305fceb60ac30ffac12913ea5974f7c1.jpg" Reference="n_XkHNwkRUqSJzUR3A5yMg/KcYzSXjmUUi89zJbm4Z0Aw" ScopeSelectorArgument="&lt;wnd app='trainingordersystem.exe' ctrlname='frmOrderConfirmation' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                            </Sequence>
+                          </ActivityAction>
+                        </uix:NApplicationCard.Body>
+                        <uix:NApplicationCard.OCREngine>
+                          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                            <ActivityFunc.Argument>
+                              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                            </ActivityFunc.Argument>
+                          </ActivityFunc>
+                        </uix:NApplicationCard.OCREngine>
+                        <uix:NApplicationCard.TargetApp>
+                          <uix:TargetApp Area="65, 65, 373, 193" ContentHash="sJIvjwDFEkeiuYbcBgLLzQ" FilePath="C:\Users\yaren\OneDrive\Belgeler\UiPath\OrderSystem\trainingordersystem.exe" IconBase64="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" InformativeScreenshot="cc4c61342c033135c3390bfbbd6c2768.jpg" Reference="n_XkHNwkRUqSJzUR3A5yMg/cpKnItTQA0uY80mmqVMCyg" Selector="&lt;wnd app='trainingordersystem.exe' ctrlname='frmOrderConfirmation' /&gt;" Version="V3" />
+                        </uix:NApplicationCard.TargetApp>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NApplicationCard>
+                      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Options" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="451.2,745.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="a1f6c9e5-6083-4b18-8425-62aa4f5cce60" Version="V2">
+                        <uix:NApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,490.4" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Option number'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_10" InteractionMode="SameAsCard" ScopeIdentifier="a1f6c9e5-6083-4b18-8425-62aa4f5cce60" Text="2" Version="V5">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable ContentHash="xdTtPZ35zEi8RyvOczbF1g" DesignTimeRectangle="125, 174, 81, 25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd ctrlname='txtOption' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;" Guid="08a1e1e8-9a77-4746-948c-355789ef1b35" InformativeScreenshot="f7d1cd889f557c885fce2495ed060d8b.jpg" IsResponsive="True" Reference="n_XkHNwkRUqSJzUR3A5yMg/BMBkQFniAkC4s-wLyl7fDA" ScopeSelectorArgument="&lt;wnd app='trainingordersystem.exe' ctrlname='frmMenu' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target DesignTimeRectangle="19, 183, 99, 16" ElementType="Text" FuzzySelectorArgument="&lt;wnd ctrlname='Label4' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' check:text='Option number:' /&gt;" Guid="5ea2be59-9521-43ba-af91-726607431c99" SearchSteps="FuzzySelector" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NTypeInto.Target>
+                                <uix:NTypeInto.VerifyOptions>
+                                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                  </uix:VerifyExecutionTypeIntoOptions>
+                                </uix:NTypeInto.VerifyOptions>
+                              </uix:NTypeInto>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Go'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,184.8" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a1f6c9e5-6083-4b18-8425-62aa4f5cce60" Version="V5">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable ContentHash="grHpJfgBW0-LsWUUvDidJQ" DesignTimeRectangle="228, 171, 124, 29" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlname='Button2' /&gt;" Guid="0e67621f-6165-4855-93e6-261c5c50dc7e" InformativeScreenshot="e0db363f262ddb8691dffed42128405b.jpg" Reference="n_XkHNwkRUqSJzUR3A5yMg/s_gob65K_US6cdbNDYqO1Q" ScopeSelectorArgument="&lt;wnd app='trainingordersystem.exe' ctrlname='frmMenu' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                            </Sequence>
+                          </ActivityAction>
+                        </uix:NApplicationCard.Body>
+                        <uix:NApplicationCard.OCREngine>
+                          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                            <ActivityFunc.Argument>
+                              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                            </ActivityFunc.Argument>
+                          </ActivityFunc>
+                        </uix:NApplicationCard.OCREngine>
+                        <uix:NApplicationCard.TargetApp>
+                          <uix:TargetApp Area="195, 195, 370, 248" ContentHash="HNZkDBdYe06d_9upeMj-QQ" FilePath="C:\Users\yaren\OneDrive\Belgeler\UiPath\OrderSystem\trainingordersystem.exe" IconBase64="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" InformativeScreenshot="b9a9a99658f77d85164397ce63ad9f35.jpg" Reference="n_XkHNwkRUqSJzUR3A5yMg/IbQj8QaJK0OUUcTGZKO--A" Selector="&lt;wnd app='trainingordersystem.exe' ctrlname='frmMenu' /&gt;" Version="V3" />
+                        </uix:NApplicationCard.TargetApp>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NApplicationCard>
+                      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="View order" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="451.2,56.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="12a2d33e-ed4f-4c48-960a-6f41a2bad326" Version="V2">
+                        <uix:NApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,684" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Order number'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_11" InteractionMode="SameAsCard" ScopeIdentifier="12a2d33e-ed4f-4c48-960a-6f41a2bad326" Text="[currentNum]" Version="V5">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable ContentHash="bo2dT-wxyUiP_1knAsKkcQ" DesignTimeRectangle="115, 53, 143, 25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd ctrlname='txtOrderRef' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;" Guid="274c24cb-749b-4315-833c-6184e4985a26" InformativeScreenshot="6b1f0b0a75ca043971000aa5e1071229.jpg" IsResponsive="True" Reference="n_XkHNwkRUqSJzUR3A5yMg/ByUpXmOP7USW5xwEIMJ96A" ScopeSelectorArgument="&lt;wnd app='trainingordersystem.exe' ctrlname='frmViewOrder' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <uix:Target DesignTimeRectangle="18, 61, 88, 16" ElementType="Text" FuzzySelectorArgument="&lt;wnd ctrlname='Label1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;ctrl name='Order number' role='text' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Order number' /&gt;" Guid="bf4e3bf2-1a20-478b-841d-fb25e667551b" SearchSteps="FuzzySelector" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NTypeInto.Target>
+                                <uix:NTypeInto.VerifyOptions>
+                                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                  </uix:VerifyExecutionTypeIntoOptions>
+                                </uix:NTypeInto.VerifyOptions>
+                              </uix:NTypeInto>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Retrieve Order'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,193.6" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="12a2d33e-ed4f-4c48-960a-6f41a2bad326" Version="V5">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable ContentHash="98Ye-H55PkWryLrvfb3eRA" DesignTimeRectangle="22, 86, 235, 29" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlname='Button1' /&gt;" Guid="6e22e357-6056-4877-aed7-95a4807fbac5" InformativeScreenshot="b9ffe566fbbc6aaa026b294d33c6bd6e.jpg" Reference="n_XkHNwkRUqSJzUR3A5yMg/B1IWJLFWH0eRQ_td5vau9A" ScopeSelectorArgument="&lt;wnd app='trainingordersystem.exe' ctrlname='frmViewOrder' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Kapat'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,184.8" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="12a2d33e-ed4f-4c48-960a-6f41a2bad326" Version="V5">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable ContentHash="Omxy3eb4t0-R6LWp7VN_lA" DesignTimeRectangle="213, 0, 60, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='Kapat' role='push button' /&gt;" Guid="e0703636-5dcb-42de-9a59-af6861201614" InformativeScreenshot="e693081bb9a0264aee442678aa193e45.jpg" Reference="n_XkHNwkRUqSJzUR3A5yMg/4MYzFqt-dkmV8jEJs1lIbg" ScopeSelectorArgument="&lt;wnd app='trainingordersystem.exe' ctrlname='frmViewOrder' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                            </Sequence>
+                          </ActivityAction>
+                        </uix:NApplicationCard.Body>
+                        <uix:NApplicationCard.OCREngine>
+                          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                            <ActivityFunc.Argument>
+                              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                            </ActivityFunc.Argument>
+                          </ActivityFunc>
+                        </uix:NApplicationCard.OCREngine>
+                        <uix:NApplicationCard.TargetApp>
+                          <uix:TargetApp Area="33, 33, 276, 369" ContentHash="sVXy6Ab6tEOc4jnYMM95WQ" FilePath="C:\Users\yaren\OneDrive\Belgeler\UiPath\OrderSystem\trainingordersystem.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAZkSURBVFhH7ZdZUFNnGIbP9LJ3nV67KyCyb1agKlYhici+ioqgoCCrKCQQJKAUlaqIC1oX6l733XZ0rB2tY3VERTRCTohiEhZxwd1aO2/n+89JOGDI9MZpL3pm3qtkzvO+3/f9//l/jvv/+S89oxQ7y0eF7obDtL1wCNsHh/Af4Ri+H44RB+AYeRBOUYfgFH0YTtFH4BRzBKNjj2J07DGMjjsuKP4Ek3P8STgnkE71VeJpOMUcWM5x3Occx33Wn88RvKz+IZbuNqNiVzvKd7ZjyY52qOvNUG0zo2iLGQWbzcirMyN7gxkZtWak15iQusqEmStNSKwyIXaZEREaI6aqjZCXGBFaakS4xoiopSZEV7RhzPQz4DhuuGii70PJCZ5QoWOKI5XrEKvRIUajQ7RGhyiNDpFlPCLKeISX8QhbwmNaKY/QUh5T1TwUah7yEh4yJj3kaj0UpFI9ElaYMSbpZzLgy3HcF/35HJWdkiuKtJCLkkkUorzXK1WzRC0IKRZVYpHuIyVVm+Ey8ywZ8Oc47sv+fI56TmXvDw8pkoCVNsAlLZBJoWqJSnnI1IKSV7fDZda5gQ3QwFHP+ya3lVoK1glSiyKgVXrIlvQqpbYDLsnn7RiIOMAG7p/AKXEvWAK1AMsEyTWtVqVt6ITr7F/sGIg8yKbdApf1h3+U2gIVwQS1AMtJBsgrBCkqDJi3qQuuqb8ObIDWOS01ZsAGvE9qSeLgUj2CVDwmqHj4L9YhoJBHQBGPQCVJj0CVoLS6TrjNuWjHQPRhts5twa3J1TpMVukQUNAMzywtXDLuYvS8u3DO0MJlwT24ZjXDLacF7rktcM/TwSNfkOdCHjNrO+A295I9A0fYJsMM2Ejun6eFe8YdjEq5DYe5TXBKvwvn+VqMyZSARSgBvQr08F6kh/diPXwKW5GysQvu6ZftGIg5yna4EJVooLgZsuIWjMvVwiGlESOSGxncce4dAS6mdstuZok983XwKuCtQN+iVvgpDfBTGeBXbEDalkdwn3dlYAO0t2fWkgEBPnHRPTjObsSwGbescGtyCzynBR55QmILmKBji+/jq5L7GKd+gHGlD+C/pA0Z9d3wmH/VnoFjSK8RDHjNb8KQxBsYmnQTw2c1YuTs23CYYwMupvZZrIevBawWgAFlbQjUPERg+UN8XWFE9q4n8Mi8ZsdA3HH2YXGZ04jBCQ0YOv0mhs8U0jukNsEx7Q7r+UdwSq0ysMQMrBGA45caMWGZCRMqTZj4rRn5+57Cc8F1+wZkSgMGxTWw9MOSbmLErN6+07SzgctuZmXvAxdTU1oCT6w0I6jKjEkr2jFpZQe+qe7AooM98MxqsGMg/gQm5LdiUHwDhojpR85u7FN6mnY2cAuFslvgVG5KTYkFcAcmV3diyqpOBK/uQvCaLiiPPodXzk37BgJy9Bic0Nt7aXqXzN7S0/KinlvKzuCVJgQtb2dpCRyy5hFka7shX9cNxbrHKDn5El65jQMboJOM3wK9UH7L5Kc2wYl6L0lvKT0NHE04lZ0lF+GUWLb2EYNO3fgEoXVPMW3TU5T99AreebftGEg4Ca/5euvwSSd/TKaWrfc+6cXSs55XmSXwbig2PGbQsO+fIWJrDyK39aDi3Bt459+xZ+AUPObpxfLfwkhp+cXJZ72n9CpDb/pKExs2KjtLvl6Ah2/pQdT254j+4QVidr5E5YW38CnQ2jfgndHKDFin37L0JOWnHY71ngZPmn5NF+v3tDoRXv8csTtfIn7PKyTse40Vl/6Az6Jm+wbGZrViWJLt/rOlJy2/5iHGi72f8p2QfuqGxwjb/AyR20X43teYvv8tkg69Q/WVP+G7uMWOgcTT8M9ttQ6gtf9kwNJ/WnpKsfwaafm7IK/tRmjdE5aeyh63+xUS97/BjMPvkHzsPVZf+wDfQt6+gcA8HkGF9xFc/ACKsjaELTUiqsqEuGozkmrakby+E6mbupC+9REydzxGzp6nWLi/B4WHn0N1/AVKz7yC5uxrLDv/FlUX32Hl5fdYdfUDaq7/herfP8BPqR/YAF0a6NxOR2c6vdIB0jX5PFxTLrCTDB0m3NJ+Y59U+qrRh4X2dtpePbNusE2G1rl3XhObdho46jmV3beIh5+yFc6zDu0Z8FguXhbo0kB/IJefQvRu2xcT8bpEP5A7KtGnEL3b9tXs33j+Bgn+05B0xhznAAAAAElFTkSuQmCC" InformativeScreenshot="69a5dae5079b07d59535fea6b66b7e33.jpg" Reference="n_XkHNwkRUqSJzUR3A5yMg/4DO2GYtbI0-q4tYGttfacg" Selector="&lt;wnd app='trainingordersystem.exe' ctrlname='frmViewOrder' /&gt;" Version="V3" />
+                        </uix:NApplicationCard.TargetApp>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NApplicationCard>
+                      <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{currentNum}]" DataTable="[varTempDt]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="451.2,220" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                      <ui:WriteRange DataTable="[varTempDt]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="451.2,269.6" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" StartingCell="E1" WorkbookPath="C:\Users\yaren\OneDrive\Belgeler\UiPath\OrderSystem\Order System.xlsx" />
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ForEachRow>
+            </Sequence>
+            <FlowStep.Next>
+              <FlowStep x:Name="__ReferenceID1">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <av:Point x:Key="ShapeLocation">375,325</av:Point>
+                    <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Sequence DisplayName="End state" sap:VirtualizedContainerService.HintSize="649.6,796.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Options" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="616,736.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="a1f6c9e5-6083-4b18-8425-62aa4f5cce60" Version="V2">
+                    <uix:NApplicationCard.Body>
+                      <ActivityAction x:TypeArguments="x:Object">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,490.4" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Option number'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_12" InteractionMode="SameAsCard" ScopeIdentifier="a1f6c9e5-6083-4b18-8425-62aa4f5cce60" Text="3" Version="V5">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable ContentHash="xdTtPZ35zEi8RyvOczbF1g" DesignTimeRectangle="125, 174, 81, 25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd ctrlname='txtOption' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;" Guid="08a1e1e8-9a77-4746-948c-355789ef1b35" InformativeScreenshot="f7d1cd889f557c885fce2495ed060d8b.jpg" IsResponsive="True" Reference="n_XkHNwkRUqSJzUR3A5yMg/BMBkQFniAkC4s-wLyl7fDA" ScopeSelectorArgument="&lt;wnd app='trainingordersystem.exe' ctrlname='frmMenu' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target DesignTimeRectangle="19, 183, 99, 16" ElementType="Text" FuzzySelectorArgument="&lt;wnd ctrlname='Label4' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' check:text='Option number:' /&gt;" Guid="5ea2be59-9521-43ba-af91-726607431c99" SearchSteps="FuzzySelector" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                            <uix:NTypeInto.VerifyOptions>
+                              <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                                <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              </uix:VerifyExecutionTypeIntoOptions>
+                            </uix:NTypeInto.VerifyOptions>
+                          </uix:NTypeInto>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Go'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,184.8" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a1f6c9e5-6083-4b18-8425-62aa4f5cce60" Version="V5">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable ContentHash="grHpJfgBW0-LsWUUvDidJQ" DesignTimeRectangle="228, 171, 124, 29" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlname='Button2' /&gt;" Guid="0e67621f-6165-4855-93e6-261c5c50dc7e" InformativeScreenshot="e0db363f262ddb8691dffed42128405b.jpg" Reference="n_XkHNwkRUqSJzUR3A5yMg/s_gob65K_US6cdbNDYqO1Q" ScopeSelectorArgument="&lt;wnd app='trainingordersystem.exe' ctrlname='frmMenu' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </Sequence>
+                      </ActivityAction>
+                    </uix:NApplicationCard.Body>
+                    <uix:NApplicationCard.OCREngine>
+                      <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                        <ActivityFunc.Argument>
+                          <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                        </ActivityFunc.Argument>
+                      </ActivityFunc>
+                    </uix:NApplicationCard.OCREngine>
+                    <uix:NApplicationCard.TargetApp>
+                      <uix:TargetApp Area="195, 195, 370, 248" ContentHash="HNZkDBdYe06d_9upeMj-QQ" FilePath="C:\Users\yaren\OneDrive\Belgeler\UiPath\OrderSystem\trainingordersystem.exe" IconBase64="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" InformativeScreenshot="b9a9a99658f77d85164397ce63ad9f35.jpg" Reference="n_XkHNwkRUqSJzUR3A5yMg/IbQj8QaJK0OUUcTGZKO--A" Selector="&lt;wnd app='trainingordersystem.exe' ctrlname='frmMenu' /&gt;" Version="V3" />
+                    </uix:NApplicationCard.TargetApp>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NApplicationCard>
+                </Sequence>
+              </FlowStep>
+            </FlowStep.Next>
+          </FlowStep>
+        </FlowStep.Next>
+      </FlowStep>
+      <x:Reference>__ReferenceID0</x:Reference>
+      <x:Reference>__ReferenceID1</x:Reference>
+    </Flowchart>
+  </Sequence>
+</Activity>

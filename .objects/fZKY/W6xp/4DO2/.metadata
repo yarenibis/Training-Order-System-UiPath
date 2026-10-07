@@ -1,0 +1,13 @@
+﻿{
+  "Name": "View order",
+  "Type": "Screen",
+  "Id": "4DO2GYtbI0-q4tYGttfacg",
+  "Reference": "n_XkHNwkRUqSJzUR3A5yMg/4DO2GYtbI0-q4tYGttfacg",
+  "ParentRef": "n_XkHNwkRUqSJzUR3A5yMg/W6xpPWyZvUiC5bamJyNzDQ",
+  "Created": "2026-10-06T13:11:44.9417625Z",
+  "Updated": "2026-10-06T13:11:44.9417625Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

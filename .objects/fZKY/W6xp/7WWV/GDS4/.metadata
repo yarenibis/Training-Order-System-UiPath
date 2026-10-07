@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Number required",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "GDS4hNgv0UW8ZLQ_4XOUfw",
+  "Reference": "n_XkHNwkRUqSJzUR3A5yMg/GDS4hNgv0UW8ZLQ_4XOUfw",
+  "ParentRef": "n_XkHNwkRUqSJzUR3A5yMg/7WWVtWy15EiIhzbswYSkRQ",
+  "Created": "2026-10-06T12:41:24.6197515Z",
+  "Updated": "2026-10-06T12:41:24.6197515Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

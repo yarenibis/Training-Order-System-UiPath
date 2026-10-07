@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="nwH3Ibbxfku_10cQLJvaXg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="34, 75, 284, 16" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlname='Label1' /&gt;" Guid="2f1e63a0-adec-4844-b21b-77341f65f5d5" ScopeSelectorArgument="&lt;wnd app='trainingordersystem.exe' ctrlname='frmOrderConfirmation' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="c712ece8ae4d7d3989d65043a65b8b8f.jpg" xmlns="">0N06La8M_RkOjNEI6lg402Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

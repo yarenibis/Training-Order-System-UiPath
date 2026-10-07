@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Retrieve Order",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "B1IWJLFWH0eRQ_td5vau9A",
+  "Reference": "n_XkHNwkRUqSJzUR3A5yMg/B1IWJLFWH0eRQ_td5vau9A",
+  "ParentRef": "n_XkHNwkRUqSJzUR3A5yMg/4DO2GYtbI0-q4tYGttfacg",
+  "Created": "2026-10-06T13:14:00.2220274Z",
+  "Updated": "2026-10-06T13:14:00.2220274Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

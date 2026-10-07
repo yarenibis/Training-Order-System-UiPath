@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Options",
+  "Type": "Screen",
+  "Id": "IbQj8QaJK0OUUcTGZKO--A",
+  "Reference": "n_XkHNwkRUqSJzUR3A5yMg/IbQj8QaJK0OUUcTGZKO--A",
+  "ParentRef": "n_XkHNwkRUqSJzUR3A5yMg/W6xpPWyZvUiC5bamJyNzDQ",
+  "Created": "2026-10-06T12:38:50.2822815Z",
+  "Updated": "2026-10-06T12:38:50.2822815Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

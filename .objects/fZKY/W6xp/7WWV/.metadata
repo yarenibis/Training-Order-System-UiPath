@@ -1,0 +1,13 @@
+﻿{
+  "Name": "New Order",
+  "Type": "Screen",
+  "Id": "7WWVtWy15EiIhzbswYSkRQ",
+  "Reference": "n_XkHNwkRUqSJzUR3A5yMg/7WWVtWy15EiIhzbswYSkRQ",
+  "ParentRef": "n_XkHNwkRUqSJzUR3A5yMg/W6xpPWyZvUiC5bamJyNzDQ",
+  "Created": "2026-10-06T12:40:46.1941094Z",
+  "Updated": "2026-10-06T12:40:46.1941094Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Sign in",
+  "Type": "Screen",
+  "Id": "SiYbCYgksUK1OmghjyQ4gA",
+  "Reference": "n_XkHNwkRUqSJzUR3A5yMg/SiYbCYgksUK1OmghjyQ4gA",
+  "ParentRef": "n_XkHNwkRUqSJzUR3A5yMg/W6xpPWyZvUiC5bamJyNzDQ",
+  "Created": "2026-10-06T12:13:58.9803066Z",
+  "Updated": "2026-10-06T12:13:58.9803066Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

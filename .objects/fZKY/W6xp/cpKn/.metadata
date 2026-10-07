@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Order Confirmation",
+  "Type": "Screen",
+  "Id": "cpKnItTQA0uY80mmqVMCyg",
+  "Reference": "n_XkHNwkRUqSJzUR3A5yMg/cpKnItTQA0uY80mmqVMCyg",
+  "ParentRef": "n_XkHNwkRUqSJzUR3A5yMg/W6xpPWyZvUiC5bamJyNzDQ",
+  "Created": "2026-10-06T12:55:07.4096157Z",
+  "Updated": "2026-10-06T12:55:07.4096157Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

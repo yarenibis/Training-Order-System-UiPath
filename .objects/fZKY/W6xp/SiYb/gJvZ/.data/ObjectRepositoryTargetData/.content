@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ZbV719lxhkuV7v1lO7ySdg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="113, 48, 125, 25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd ctrlname='txtUsername' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;" Guid="66957911-2f78-485e-a65b-b0356ba2558c" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='trainingordersystem.exe' ctrlname='frmLogin' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="19, 55, 86, 16" ElementType="Text" FuzzySelectorArgument="&lt;wnd ctrlname='Label1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' check:text='Staff Number' /&gt;" Guid="eae7eb1d-dc40-447a-a4ec-dc827c5f30b1" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a631f17427c41a97e27517e9159b684a.jpg" xmlns="">0oyOgTZdzVUqp_ygQFNy4Aw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
